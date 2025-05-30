@@ -1,22 +1,72 @@
-# 🕵️ Crime Scene Mapping Tool
+# 🕵️‍♂️ Crime Scene Mapping Tool
 
-This is a front-end crime scene mapping tool I built as part of my capstone project at **Leeds Beckett University (2018)**.
+This project is a **crime scene mapping tool** built using **HTML, CSS, and JavaScript**. It allows users to **drag and drop** various objects (like rooms, chairs, sofas, and doors) to visually recreate a crime scene.
 
-Users can:
-- Drag and drop shapes (Rectangle, Square, Circle)
-- Add objects like Chair, Sofa, Door
-- Insert text clues
-- Upload a background image (like a floor plan)
-- Save and load crime scene layouts (via localStorage)
+---
+
+## 🎓 Project Background
+
+This tool was originally developed in **2018** as my **individual capstone project** while studying at **Leeds Beckett University, UK**. It reflects my early passion for **front-end development**, **problem-solving**, and user-centered design — before I even knew it was called that!
+
+---
+
+## 🛠️ Features
+
+✅ Drag and drop elements:  
+&nbsp;&nbsp;&nbsp;&nbsp;- Rectangles (walls/rooms)  
+&nbsp;&nbsp;&nbsp;&nbsp;- Squares, circles  
+&nbsp;&nbsp;&nbsp;&nbsp;- Chairs, sofas, doors  
+&nbsp;&nbsp;&nbsp;&nbsp;- Text labels / Clues  
+
+✅ Upload background image (e.g., a floor plan)
+
+✅ Save layout to `localStorage` and reload it
+
+✅ Clean and responsive UI
+
+---
+
+## 🖼️ Screenshots
+
+> _(Add screenshots here once you take them)_  
+> You can press `Print Screen` and paste into Paint, then save and upload.
+
+---
 
 ## 🚀 Live Demo
-👉 [Click here to try it](https://jac-rajendran.github.io/crime-scene-mapper/) 👈
 
-## 💻 Built With
-- HTML
-- CSS
-- JavaScript
+Try it live here:  
+👉 [https://jac-rajendran.github.io/crime-scene-mapper](https://jac-rajendran.github.io/crime-scene-mapper)
 
-## 📜 Author
-Jacob Smith Rajendran
-# crime-scene-mapper
+---
+
+## 🧰 Built With
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+---
+
+## 🧠 Lessons Learned
+
+While working on this project, I learned how to:
+- Use the HTML5 Drag and Drop API
+- Create reusable DOM elements programmatically
+- Style interactive components
+- Store state using `localStorage`
+- Present user-friendly features without any frameworks
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💼 Author
+
+**Jacob Smith Rajendran**  
+Bachelor's Degree – Leeds Beckett University  
+[Visit My Portfolio Repo](https://github.com/jac-rajendran/Jacob-s-portfolio)
