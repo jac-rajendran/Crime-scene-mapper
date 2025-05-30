@@ -29,7 +29,7 @@ This tool was originally developed for my **individual capstone project** while 
 ## 🚀 Live Demo
 
 Try it live here:  
-👉 [https://jac-rajendran.github.io/crime-scene-mapper](https://jac-rajendran.github.io/crime-scene-mapper)
+👉 [https://jac-rajendran.github.io/crime-scene-mapper](https://jac-rajendran.github.io/Crime-Scene-Mapper)
 
 ---
 
