@@ -10,7 +10,7 @@ Users can:
 - Save and load crime scene layouts (via localStorage)
 
 ## 🚀 Live Demo
-👉 [Click here to try it](https://yourusername.github.io/crime-scene-mapper/) 👈
+👉 [Click here to try it](https://jac-rajendran.github.io/crime-scene-mapper/) 👈
 
 ## 💻 Built With
 - HTML
