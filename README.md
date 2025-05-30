@@ -6,7 +6,7 @@ This project is a **crime scene mapping tool** built using **HTML, CSS, and Java
 
 ## 🎓 Project Background
 
-This tool was originally developed in **2018** as my **individual capstone project** while studying at **Leeds Beckett University, UK**. It reflects my early passion for **front-end development**, **problem-solving**, and user-centered design — before I even knew it was called that!
+This tool was originally developed for my **individual capstone project** while studying at **Leeds Beckett University, UK**. It reflects my early passion for **front-end development**, **problem-solving**, and user-centered design — before I even knew it was called that!
 
 ---
 
