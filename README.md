@@ -26,13 +26,6 @@ This tool was originally developed in **2018** as my **individual capstone proje
 
 ---
 
-## 🖼️ Screenshots
-
-> _(Add screenshots here once you take them)_  
-> You can press `Print Screen` and paste into Paint, then save and upload.
-
----
-
 ## 🚀 Live Demo
 
 Try it live here:  
