@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🕵️ Crime Scene Mapper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🕵️ Crime Scene Mapper</h1>
+  </header>
+  <section class="tools">
+    <div class="section">
+      <h3>🧰 Tools</h3>
+      <button onclick="selectTool('rectangle')">🟥 Rectangle</button>
+      <button onclick="selectTool('circle')">⚪ Circle</button>
+      <button onclick="selectTool('chair')">🪑 Chair</button>
+      <button onclick="selectTool('sofa')">🛋️ Sofa</button>
+      <button onclick="selectTool('door')">🚪 Door</button>
+      <button onclick="selectTool('draw')">✏️ Draw</button>
+      <button onclick="selectTool('note')">📝 Note</button>
+    </div>
+    <div class="section">
+      <h3>🕒 Incident Details</h3>
+      <input type="datetime-local" id="incidentTime" /><br>
+      <input type="text" id="roomTemp" placeholder="Room Temp °C" />
+    </div>
+    <div class="section">
+      <h3>🗑️ Actions</h3>
+      <button onclick="deleteLast()">❌ Delete Last</button>
+      <button onclick="clearCanvas()">🧹 Clear All</button>
+    </div>
+  </section>
+  <main>
+    <canvas id="sceneCanvas" width="800" height="600"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
