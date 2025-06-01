@@ -1,87 +1,102 @@
-# 🕵️‍♂️ Crime Scene Mapper
+<div align="center">
 
-**Crime Scene Mapper** is a modern, drag-and-drop web tool for investigators and analysts to digitally recreate and document crime scenes. Designed for usability and clarity, this project was built using **HTML, CSS, and JavaScript**, and features a clean, dark-themed UI with customizable canvas elements.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=FFBF00&center=true&vCenter=true&width=600&lines=Crime+Scene+Mapper+%7C+Modern+Forensics+UI;Drag-%26-Drop+Digital+Crime+Scene+Tool;Dark+Theme+Canvas+%F0%9F%94%AB+%7C+HTML%2BCSS%2BJS;Built+by+Jacob+Smith+Rajendran+%F0%9F%91%8B" alt="Typing SVG" />
+
+![crime scene](https://img.shields.io/badge/Crime%20Scene-Analysis-darkred?style=for-the-badge&logo=themoviedatabase&logoColor=white)
+![MIT License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+![Responsive](https://img.shields.io/badge/Responsive-Design-1f1f1f?style=for-the-badge&logo=css3&logoColor=white)
+
+</div>
 
 ---
 
-## 🎓 Project Overview
+## 🕵️‍♂️ Crime Scene Mapper
 
-This project was developed as part of my **capstone submission at Leeds Beckett University (UK)**. It showcases my practical understanding of front-end development, user interface design, and problem-solving — especially when developing tools that blend utility with simplicity.
+**Crime Scene Mapper** is a sleek, browser-based canvas tool for **digital crime scene recreation**. Designed for forensics students, law enforcement trainees, or crime story fans, this app lets you **drag, drop, and document** scenes interactively — all within a beautiful **dark-themed UI**.
+
+> 🏁 Built with Vanilla JS, HTML5 Canvas, and CSS3 for my Capstone at **Leeds Beckett University (UK)**
 
 ---
 
-## 🌟 Key Features
+## 🧩 Features at a Glance
 
-✅ **Drag-and-Drop Crime Scene Mapping**  
-&nbsp;&nbsp;&nbsp;&nbsp;• Add rectangles, circles, chairs, sofas, doors  
-&nbsp;&nbsp;&nbsp;&nbsp;• Place and position objects easily
-
-✅ **Canvas Drawing & Notes**  
-&nbsp;&nbsp;&nbsp;&nbsp;• Freehand sketching  
-&nbsp;&nbsp;&nbsp;&nbsp;• Add text clues or observations anywhere on the canvas
-
-✅ **Crime Scene Details Panel**  
-&nbsp;&nbsp;&nbsp;&nbsp;• Record date/time, room temperature, and case notes
-
-✅ **Dynamic Canvas**  
-&nbsp;&nbsp;&nbsp;&nbsp;• Resizable layout for small or large room maps  
-&nbsp;&nbsp;&nbsp;&nbsp;• Option to upload a background image (e.g. floorplan)
-
-✅ **Save/Reload Functionality**  
-&nbsp;&nbsp;&nbsp;&nbsp;• All canvas items are saved using `localStorage`  
-&nbsp;&nbsp;&nbsp;&nbsp;• Reload your layout with a single click
-
-✅ **Clean, Dark Theme UI**  
-&nbsp;&nbsp;&nbsp;&nbsp;• Modern and accessible design  
-&nbsp;&nbsp;&nbsp;&nbsp;• Mobile-friendly and responsive layout
+| Feature | Description |
+|--------|-------------|
+| 🧱 **Drag & Drop Elements** | Add chairs, sofas, doors, and shapes to simulate a scene |
+| ✍️ **Freehand Drawing Tool** | Annotate diagrams or sketch routes on the canvas |
+| 📝 **Sticky Notes & Clues** | Drop contextual notes anywhere on screen |
+| 🌡️ **Crime Scene Info Panel** | Log date, time, temperature, and room description |
+| 📐 **Resizable Canvas** | Flexibly adapt your layout to match real-world dimensions |
+| 🖼️ **Background Upload** | Overlay a floorplan or crime scene photo |
+| 💾 **Save / Reload via `localStorage`** | Pick up exactly where you left off |
+| 📱 **Mobile-Responsive & Touch-Friendly** | Perfect on tablets and desktops |
+| 🌙 **Dark Mode Aesthetic** | Easier on the eyes, perfect for field or lab use |
 
 ---
 
 ## 🖼️ Live Demo
 
-▶️ **Try it in your browser now:**  
-🔗 [https://jac-rajendran.github.io/Crime-scene-mapper](https://jac-rajendran.github.io/Crime-scene-mapper)
+🔗 [**Try it out now on GitHub Pages**](https://jac-rajendran.github.io/Crime-scene-mapper)  
+*(Best experienced on desktop or tablet)*
 
 ---
 
-## 🧰 Tech Stack
+## 🔮 Possible Enhancements (Roadmap)
 
-- **HTML5**
-- **CSS3**
-- **Vanilla JavaScript**
+- 🖼️ Export as PNG or PDF  
+- 👥 Multi-user collaboration (WebSockets)  
+- 🔍 Zoom & pan controls  
+- 💾 Cloud sync or Google Drive integration  
+- 🧠 AI-powered object placement (based on scene logic)
 
 ---
 
-## 📂 Repository Structure
+## ⚙️ Tech Stack
+
+| Frontend | Purpose |
+|----------|---------|
+| 🧱 HTML5 | Structure & layout |
+| 🎨 CSS3 | Custom dark mode styles & responsiveness |
+| ⚙️ JavaScript | Core functionality, Canvas API, interactivity |
+| 📦 localStorage | Save & load scene state persistently |
+| 🚀 GitHub Pages | Hosting for demo |
+
+---
 
 
 ---
 
 ## 🧠 What I Learned
 
-Through this project, I deepened my skills in:
-- DOM manipulation and layout rendering
-- Canvas drawing APIs
-- Local data persistence using `localStorage`
-- Creating user-centered web interfaces without frameworks
-- Managing GitHub Pages deployment for static websites
+This capstone taught me how to:
+- 🎯 Design user-friendly interfaces without frameworks
+- 🖌️ Use the **Canvas API** for drawing + annotation tools
+- 🧠 Implement `localStorage` effectively for offline-first web apps
+- 🧩 Create modular JavaScript to manage draggable elements and scene states
+- 📱 Make responsive layouts work seamlessly on all screen sizes
+- 🚀 Publish and maintain static web projects via GitHub Pages
 
 ---
 
 ## 📜 License
 
-This project is open-source under the [MIT License](LICENSE).
+This project is released under the **MIT License**.  
+Feel free to fork, contribute, or adapt the tool for your forensic or educational needs.
 
 ---
 
 ## 🙋 About Me
 
 **Jacob Smith Rajendran**  
-Capstone Project — Leeds Beckett University 🇬🇧  
-💼 [Visit My Portfolio](https://github.com/jac-rajendran/Jacob-s-portfolio)  
-🔗 [Connect on LinkedIn](https://www.linkedin.com/in/jacob-smith-rajendran-678316244/)  
-🧠 Passionate about building thoughtful tech for real-world problems.
+👨‍🎓 BSc Computer Forensics & Security, Leeds Beckett University  
+🔍 Passionate about building real-world tools that solve human problems  
+🌐 [Portfolio](https://github.com/jac-rajendran/Jacob-s-portfolio)  
+🔗 [LinkedIn](https://www.linkedin.com/in/jacob-smith-rajendran-678316244)
 
 ---
 
-> “Technology should simplify, not complicate. That’s the mindset I followed while building this project.”
+<div align="center">
+
+> 💡 *"Technology should simplify, not complicate. That’s the mindset I followed while building this project."*
+
+</div>
