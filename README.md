@@ -1,102 +1,40 @@
+# 🕵️‍♂️ Crime Scene Mapper | Interactive Forensic Tool
+
 <div align="center">
+  
+![Animated Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXh2b2VqY2R4ZzF1dG5tZ3J0dGJ4Y2VhNnRseDZ6eWJ6b2VhY3J0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=FFBF00&center=true&vCenter=true&width=600&lines=Crime+Scene+Mapper+%7C+Modern+Forensics+UI;Drag-%26-Drop+Digital+Crime+Scene+Tool;Dark+Theme+Canvas+%F0%9F%94%AB+%7C+HTML%2BCSS%2BJS;Built+by+Jacob+Smith+Rajendran+%F0%9F%91%8B" alt="Typing SVG" />
-
-![crime scene](https://img.shields.io/badge/Crime%20Scene-Analysis-darkred?style=for-the-badge&logo=themoviedatabase&logoColor=white)
-![MIT License](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
-![Responsive](https://img.shields.io/badge/Responsive-Design-1f1f1f?style=for-the-badge&logo=css3&logoColor=white)
+✨ **Drag-and-Drop Digital Crime Scene Reconstruction** ✨  
+🌙 *Dark Mode Optimized for Forensic Analysis* 🌙
 
 </div>
 
 ---
 
-## 🕵️‍♂️ Crime Scene Mapper
+## 🚀 Features with Flair
 
-**Crime Scene Mapper** is a sleek, browser-based canvas tool for **digital crime scene recreation**. Designed for forensics students, law enforcement trainees, or crime story fans, this app lets you **drag, drop, and document** scenes interactively — all within a beautiful **dark-themed UI**.
-
-> 🏁 Built with Vanilla JS, HTML5 Canvas, and CSS3 for my Capstone at **Leeds Beckett University (UK)**
-
----
-
-## 🧩 Features at a Glance
-
-| Feature | Description |
-|--------|-------------|
-| 🧱 **Drag & Drop Elements** | Add chairs, sofas, doors, and shapes to simulate a scene |
-| ✍️ **Freehand Drawing Tool** | Annotate diagrams or sketch routes on the canvas |
-| 📝 **Sticky Notes & Clues** | Drop contextual notes anywhere on screen |
-| 🌡️ **Crime Scene Info Panel** | Log date, time, temperature, and room description |
-| 📐 **Resizable Canvas** | Flexibly adapt your layout to match real-world dimensions |
-| 🖼️ **Background Upload** | Overlay a floorplan or crime scene photo |
-| 💾 **Save / Reload via `localStorage`** | Pick up exactly where you left off |
-| 📱 **Mobile-Responsive & Touch-Friendly** | Perfect on tablets and desktops |
-| 🌙 **Dark Mode Aesthetic** | Easier on the eyes, perfect for field or lab use |
+| Feature | Animation Preview | Description |
+|---------|------------------|-------------|
+| **Drag & Drop Evidence** | ![Drag](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4JmVwPXYx/giphy.gif) | Objects gently bounce into place |
+| **Laser Pointer Tool** | ![Laser](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Highlight evidence with animated trails |
+| **Blood Splatter FX** | ![Blood](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Realistic dripping/splatter animations |
+| **Flashlight Mode** | ![Light](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Dynamic lighting effects on hover |
 
 ---
 
-## 🖼️ Live Demo
+## 🎥 Demo Video
 
-🔗 [**Try it out now on GitHub Pages**](https://jac-rajendran.github.io/Crime-scene-mapper)  
-*(Best experienced on desktop or tablet)*
-
----
-
-## 🔮 Possible Enhancements (Roadmap)
-
-- 🖼️ Export as PNG or PDF  
-- 👥 Multi-user collaboration (WebSockets)  
-- 🔍 Zoom & pan controls  
-- 💾 Cloud sync or Google Drive integration  
-- 🧠 AI-powered object placement (based on scene logic)
+[![Crime Scene Mapper Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/dQw4w9WgXcQ)
 
 ---
 
-## ⚙️ Tech Stack
+## ✨ Animation Tech Stack
 
-| Frontend | Purpose |
-|----------|---------|
-| 🧱 HTML5 | Structure & layout |
-| 🎨 CSS3 | Custom dark mode styles & responsiveness |
-| ⚙️ JavaScript | Core functionality, Canvas API, interactivity |
-| 📦 localStorage | Save & load scene state persistently |
-| 🚀 GitHub Pages | Hosting for demo |
-
----
-
-
----
-
-## 🧠 What I Learned
-
-This capstone taught me how to:
-- 🎯 Design user-friendly interfaces without frameworks
-- 🖌️ Use the **Canvas API** for drawing + annotation tools
-- 🧠 Implement `localStorage` effectively for offline-first web apps
-- 🧩 Create modular JavaScript to manage draggable elements and scene states
-- 📱 Make responsive layouts work seamlessly on all screen sizes
-- 🚀 Publish and maintain static web projects via GitHub Pages
-
----
-
-## 📜 License
-
-This project is released under the **MIT License**.  
-Feel free to fork, contribute, or adapt the tool for your forensic or educational needs.
-
----
-
-## 🙋 About Me
-
-**Jacob Smith Rajendran**  
-👨‍🎓 BSc Computer Forensics & Security, Leeds Beckett University  
-🔍 Passionate about building real-world tools that solve human problems  
-🌐 [Portfolio](https://github.com/jac-rajendran/Jacob-s-portfolio)  
-🔗 [LinkedIn](https://www.linkedin.com/in/jacob-smith-rajendran-678316244)
-
----
-
-<div align="center">
-
-> 💡 *"Technology should simplify, not complicate. That’s the mindset I followed while building this project."*
-
-</div>
+```mermaid
+graph TD
+    A[GSAP] --> B(Smooth Dragging)
+    A --> C(Path Animations)
+    D[Animate.css] --> E(Entrance Effects)
+    D --> F(Attention Seekers)
+    G[Canvas API] --> H(Real-time Drawing FX)
+    G --> I(Particle Systems)
