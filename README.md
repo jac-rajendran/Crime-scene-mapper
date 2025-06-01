@@ -79,7 +79,7 @@ This project is open-source under the [MIT License](LICENSE).
 **Jacob Smith Rajendran**  
 Capstone Project — Leeds Beckett University 🇬🇧  
 💼 [Visit My Portfolio](https://github.com/jac-rajendran/Jacob-s-portfolio)  
-🔗 [Connect on LinkedIn]([https://linkedin.com/in/YOUR-LINK-HERE](https://www.linkedin.com/in/jacob-smith-rajendran-678316244/))  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/jacob-smith-rajendran-678316244/)  
 🧠 Passionate about building thoughtful tech for real-world problems.
 
 ---
