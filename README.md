@@ -1,37 +1,35 @@
-# 🕵️‍♂️ Crime Scene Mapper | Interactive Forensic Tool
+# Crime Scene Reconstruction Toolkit
 
-<div align="center">
-  
-![Animated Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXh2b2VqY2R4ZzF1dG5tZ3J0dGJ4Y2VhNnRseDZ6eWJ6b2VhY3J0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)
+![Header Image](https://via.placeholder.com/1200x400?text=Crime+Scene+Reconstruction+Toolkit+Demo)
 
-✨ **Drag-and-Drop Digital Crime Scene Reconstruction** ✨  
-🌙 *Dark Mode Optimized for Forensic Analysis* 🌙
+A digital forensic platform for precise crime scene documentation and analysis. Designed for law enforcement and forensic professionals to create interactive scene diagrams with evidentiary metadata.
 
-</div>
+## Key Features
 
----
+### Core Capabilities
+- **Precision Evidence Placement**  
+  Snap-to-grid positioning with millimeter-accurate measurement tools
+- **Standardized Forensic Markers**  
+  IAI-compliant evidence tagging system (Item-1, Item-2, etc.)
+- **Trajectory Analysis**  
+  Angle-of-impact calculators with 3D projection lines
+- **Chain-of-Custody Logs**  
+  Automated evidence tracking with timestamps
 
-## 🚀 Features with Flair
+### Technical Highlights
+- **Multi-Layer Workspace**  
+  Separate visual layers for blood patterns, ballistic paths, and physical evidence
+- **Scene Lighting Simulation**  
+  Adjustable light sources to replicate time-of-day conditions
+- **Measurement Annotations**  
+  Automatic dimension labeling with configurable units (metric/imperial)
 
-| Feature | Animation Preview | Description |
-|---------|------------------|-------------|
-| **Drag & Drop Evidence** | ![Drag](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4dW5tY2VlOGV4JmVwPXYx/giphy.gif) | Objects gently bounce into place |
-| **Laser Pointer Tool** | ![Laser](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Highlight evidence with animated trails |
-| **Blood Splatter FX** | ![Blood](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Realistic dripping/splatter animations |
-| **Flashlight Mode** | ![Light](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZzJnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/giphy.gif) | Dynamic lighting effects on hover |
-
----
-
-
----
-
-## ✨ Animation Tech Stack
+## Implementation
 
 ```mermaid
-graph TD
-    A[GSAP] --> B(Smooth Dragging)
-    A --> C(Path Animations)
-    D[Animate.css] --> E(Entrance Effects)
-    D --> F(Attention Seekers)
-    G[Canvas API] --> H(Real-time Drawing FX)
-    G --> I(Particle Systems)
+graph LR
+    A[React Frontend] --> B(Redux State Management)
+    A --> C(Fabric.js Canvas)
+    D[Node.js Backend] --> E(Scene Data Persistence)
+    D --> F(PDF Report Generation)
+    G[Three.js] --> H(3D View Mode)
