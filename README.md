@@ -22,9 +22,7 @@
 
 ---
 
-## 🎥 Demo Video
 
-[![Crime Scene Mapper Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/dQw4w9WgXcQ)
 
 ---
 
