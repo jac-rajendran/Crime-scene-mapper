@@ -4,7 +4,7 @@
   
 ![Animated Demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXh2b2VqY2R4ZzF1dG5tZ3J0dGJ4Y2VhNnRseDZ6eWJ6b2VhY3J0ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT5LMHxhOfscxPfIfm/giphy.gif)
 
-✨ **Drag-and-Drop Digital Crime Scene Reconstruction** ✨  
+✨ **Drag-and-Drop Digital Crime Scene** ✨  
 🌙 *Dark Mode Optimized for Forensic Analysis* 🌙
 
 </div>
