@@ -33,3 +33,20 @@ graph LR
     D[Node.js Backend] --> E(Scene Data Persistence)
     D --> F(PDF Report Generation)
     G[Three.js] --> H(3D View Mode)
+
+
+# Clone repository
+git clone https://github.com/yourusername/crime-scene-mapper.git
+
+# Install dependencies
+npm install
+
+# Launch development server
+npm start
+
+// Initialize scene with default forensic parameters
+const scene = new ForensicScene({
+  scale: '1:20',
+  gridUnits: 'centimeters',
+  defaultTags: 'IAI-2023'
+});
