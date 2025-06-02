@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🕵️ Crime Scene Mapper PRO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="crime-header">
+      <div class="header-content">
+        <h1><i class="fas fa-fingerprint"></i> CRIME SCENE MAPPER PRO</h1>
+        <div class="header-controls">
+          <button id="saveScene"><i class="fas fa-save"></i> Save</button>
+          <button id="loadScene"><i class="fas fa-folder-open"></i> Load</button>
+          <button id="exportScene"><i class="fas fa-file-export"></i> Export</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <aside class="tool-panel">
+        <div class="tool-section">
+          <h3><i class="fas fa-ruler-combined"></i> SHAPES</h3>
+          <div class="tool-grid">
+            <button data-tool="rectangle"><i class="fas fa-square"></i> Rectangle</button>
+            <button data-tool="circle"><i class="fas fa-circle"></i> Circle</button>
+            <button data-tool="triangle"><i class="fas fa-play"></i> Triangle</button>
+            <button data-tool="line"><i class="fas fa-minus"></i> Line</button>
+          </div>
+        </div>
+
+        <div class="tool-section">
+          <h3><i class="fas fa-home"></i> FURNITURE</h3>
+          <div class="tool-grid">
+            <button data-tool="chair"><i class="fas fa-chair"></i> Chair</button>
+            <button data-tool="sofa"><i class="fas fa-couch"></i> Sofa</button>
+            <button data-tool="door"><i class="fas fa-door-open"></i> Door</button>
+            <button data-tool="table"><i class="fas fa-table"></i> Table</button>
+          </div>
+        </div>
+
+        <div class="tool-section">
+          <h3><i class="fas fa-tools"></i> TOOLS</h3>
+          <div class="tool-grid">
+            <button data-tool="draw"><i class="fas fa-pencil-alt"></i> Draw</button>
+            <button data-tool="text"><i class="fas fa-font"></i> Text</button>
+            <button data-tool="measure"><i class="fas fa-ruler"></i> Measure</button>
+            <button data-tool="blood"><i class="fas fa-tint"></i> Blood</button>
+          </div>
+        </div>
+
+        <div class="tool-section">
+          <h3><i class="fas fa-palette"></i> APPEARANCE</h3>
+          <div class="color-picker">
+            <input type="color" id="strokeColor" value="#ff0000">
+            <label for="strokeColor">Stroke</label>
+            <input type="color" id="fillColor" value="#ff000066">
+            <label for="fillColor">Fill</label>
+          </div>
+          <div class="size-control">
+            <label>Size: <span id="sizeValue">3</span>px</label>
+            <input type="range" id="sizeInput" min="1" max="20" value="3">
+          </div>
+        </div>
+
+        <div class="tool-section">
+          <h3><i class="fas fa-file-alt"></i> SCENE DETAILS</h3>
+          <div class="form-group">
+            <label>Case Number:</label>
+            <input type="text" id="caseNumber" placeholder="CAS-2023-001">
+          </div>
+          <div class="form-group">
+            <label>Incident Time:</label>
+            <input type="datetime-local" id="incidentTime">
+          </div>
+          <div class="form-group">
+            <label>Room Temp (°C):</label>
+            <input type="number" id="roomTemp" placeholder="22.5">
+          </div>
+          <div class="form-group">
+            <label>Background:</label>
+            <input type="file" id="bgUpload" accept="image/*">
+          </div>
+        </div>
+
+        <div class="tool-section">
+          <h3><i class="fas fa-trash-alt"></i> ACTIONS</h3>
+          <div class="action-buttons">
+            <button id="deleteSelected"><i class="fas fa-trash"></i> Delete Selected</button>
+            <button id="clearAll"><i class="fas fa-broom"></i> Clear All</button>
+            <button id="undoAction"><i class="fas fa-undo"></i> Undo</button>
+          </div>
+        </div>
+      </aside>
+
+      <main class="scene-container">
+        <div class="canvas-wrapper">
+          <canvas id="sceneCanvas"></canvas>
+          <div class="grid-overlay"></div>
+          <div class="measure-tooltip" style="display: none;"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
