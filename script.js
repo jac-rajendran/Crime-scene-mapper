@@ -6,6 +6,136 @@ document.addEventListener('DOMContentLoaded', () => {
     preserveObjectStacking: true
   });
 
+  // Google Maps variables
+  let map;
+  let marker;
+  let geocoder;
+  let currentLocation = null;
+  let miniMapInitialized = false;
+
+  // Initialize mini map
+  function initMiniMap() {
+    const miniMapElement = document.getElementById('miniMap');
+    map = new google.maps.Map(miniMapElement, {
+      center: { lat: 0, lng: 0 },
+      zoom: 2,
+      disableDefaultUI: true,
+      styles: [
+        {
+          featureType: "all",
+          elementType: "labels",
+          stylers: [{ visibility: "off" }]
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [{ visibility: "off" }]
+        }
+      ]
+    });
+
+    marker = new google.maps.Marker({
+      map: map,
+      draggable: true,
+      icon: {
+        url: "data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e74c3c'%3E%3Cpath d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z'/%3E%3C/svg%3E",
+        scaledSize: new google.maps.Size(30, 30)
+      }
+    });
+
+    geocoder = new google.maps.Geocoder();
+
+    // Update coordinates when marker is dragged
+    marker.addListener('dragend', () => {
+      updateLocationInfo(marker.getPosition());
+    });
+
+    miniMapInitialized = true;
+  }
+
+  // Update location information
+  function updateLocationInfo(latLng) {
+    currentLocation = latLng;
+    document.getElementById('locationCoords').value = `${latLng.lat().toFixed(6)}, ${latLng.lng().toFixed(6)}`;
+    
+    // Reverse geocode to get address
+    geocoder.geocode({ location: latLng }, (results, status) => {
+      if (status === "OK" && results[0]) {
+        document.getElementById('addressSearch').value = results[0].formatted_address;
+      }
+    });
+  }
+
+  // Search for an address
+  function searchAddress() {
+    const address = document.getElementById('addressSearch').value;
+    if (!address) return;
+
+    geocoder.geocode({ address: address }, (results, status) => {
+      if (status === "OK" && results[0]) {
+        const location = results[0].geometry.location;
+        map.setCenter(location);
+        map.setZoom(16);
+        marker.setPosition(location);
+        updateLocationInfo(location);
+      } else {
+        alert("Location not found. Please try a different address.");
+      }
+    });
+  }
+
+  // Add location to crime scene
+  function addLocationToScene() {
+    if (!currentLocation) {
+      alert("Please search for a location first.");
+      return;
+    }
+
+    const locationPin = new fabric.Group([
+      new fabric.Circle({
+        radius: 15,
+        fill: '#e74c3c',
+        originX: 'center',
+        originY: 'center'
+      }),
+      new fabric.Text('📍', {
+        fontSize: 20,
+        originX: 'center',
+        originY: 'center',
+        left: 0,
+        top: -5
+      })
+    ], {
+      left: canvas.width / 2,
+      top: 50,
+      hasControls: true,
+      lockUniScaling: true
+    });
+
+    // Add location data as custom property
+    locationPin.set({
+      locationData: {
+        lat: currentLocation.lat(),
+        lng: currentLocation.lng(),
+        address: document.getElementById('addressSearch').value
+      }
+    });
+
+    canvas.add(locationPin);
+    canvas.setActiveObject(locationPin);
+
+    // Add text label with address
+    const addressText = new fabric.Text(document.getElementById('addressSearch').value, {
+      left: canvas.width / 2 + 30,
+      top: 50,
+      fontSize: 16,
+      fill: '#ffffff',
+      backgroundColor: 'rgba(0,0,0,0.7)',
+      padding: 5
+    });
+    canvas.add(addressText);
+  }
+
   // Set canvas to fill available space
   function resizeCanvas() {
     const container = document.querySelector('.canvas-wrapper');
@@ -482,4 +612,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize with select tool active
   document.querySelector('[data-tool="select"]').classList.add('active');
+
+  // Initialize Google Maps when the location section is clicked
+  document.querySelector('.tool-section h3').addEventListener('click', function() {
+    if (!miniMapInitialized && this.textContent.includes('LOCATION')) {
+      initMiniMap();
+    }
+  });
+
+  // Add event listeners for new functionality
+  document.getElementById('searchAddress').addEventListener('click', searchAddress);
+  document.getElementById('addressSearch').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') searchAddress();
+  });
+  document.getElementById('addLocationToScene').addEventListener('click', addLocationToScene);
 });
