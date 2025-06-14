@@ -138,6 +138,27 @@ body {
   color: white;
 }
 
+.search-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #444;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--secondary);
+}
+
 .color-picker {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -266,6 +287,25 @@ body {
   font-size: 0.8rem;
   pointer-events: none;
   z-index: 100;
+}
+
+#miniMap {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+}
+
+.gm-style .gm-style-iw-c {
+  background-color: var(--dark) !important;
+  color: white !important;
+}
+
+.gm-style .gm-style-iw-t::after {
+  background: var(--dark) !important;
+}
+
+.gm-style .gm-ui-hover-effect img {
+  filter: invert(1);
 }
 
 /* Responsive adjustments */
