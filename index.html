@@ -23,6 +23,23 @@
     <div class="main-content">
       <aside class="tool-panel">
         <div class="tool-section">
+          <h3><i class="fas fa-map-marked-alt"></i> LOCATION</h3>
+          <div class="form-group">
+            <label>Search Address:</label>
+            <input type="text" id="addressSearch" placeholder="Enter crime scene address">
+            <button id="searchAddress" class="search-btn"><i class="fas fa-search"></i> Search</button>
+          </div>
+          <div class="form-group">
+            <label>Coordinates:</label>
+            <input type="text" id="locationCoords" readonly placeholder="Latitude, Longitude">
+          </div>
+          <div class="form-group">
+            <button id="addLocationToScene"><i class="fas fa-map-pin"></i> Add to Scene</button>
+          </div>
+          <div id="miniMap" style="height: 200px; width: 100%; margin-top: 10px;"></div>
+        </div>
+
+        <div class="tool-section">
           <h3><i class="fas fa-ruler-combined"></i> SHAPES</h3>
           <div class="tool-grid">
             <button data-tool="rectangle"><i class="fas fa-square"></i> Rectangle</button>
@@ -106,6 +123,7 @@
     </div>
   </div>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
   <script src="script.js"></script>
 </body>
